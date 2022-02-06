@@ -13,13 +13,11 @@ public class Campo {
 	private boolean minado;
 	private boolean marcado;
 
-	// Campos próximos ao campo "clicado"
+	// Campos próximos ao campo "clicado" 
 	private List<Campo> vizinhos = new ArrayList<>();
 
 	// Instancia o observer na classe do campo.
-	private List<CampoObservador> observadores = new ArrayList<>(); // Forma antiga
-	// private List<BiConsumer<Campo,CampoEvento>> observers2 = new ArrayList<>();
-	// // Forma usando lambdas...
+	private List<CampoObservador> observadores = new ArrayList<>();
 
 	Campo(int linha, int coluna) {
 		this.linha = linha;
